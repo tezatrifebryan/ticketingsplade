@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 
         <link rel=stylesheet href="{{ asset('css/style.bundle.css') }}" />
+        <link rel=stylesheet href="{{ asset('css/style.custom.css') }}" />
         <link rel=stylesheet href="{{ asset('plugins/global/plugins.bundle.css') }}" />
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
@@ -21,7 +22,7 @@
         @splade
 
         <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-		<script src="{ asset('plugins/global/plugins.bundle.js') }}"></script>
+		<script src="{{ asset('plugins/global/plugins.bundle.js') }}"></script>
 		<script src="{{ asset('/js/scripts.bundle.js') }}"></script>
 		<!--end::Global Javascript Bundle-->
     </body>
